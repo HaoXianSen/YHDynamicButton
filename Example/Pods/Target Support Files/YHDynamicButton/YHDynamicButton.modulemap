@@ -1,0 +1,6 @@
+framework module YHDynamicButton {
+  umbrella header "YHDynamicButton-umbrella.h"
+
+  export *
+  module * { export * }
+}

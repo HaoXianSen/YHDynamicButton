@@ -7,6 +7,7 @@
 //
 
 #import "YHViewController.h"
+#import <YHDynamicButton/YHDynamicButton.h>
 
 @interface YHViewController ()
 
@@ -17,7 +18,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    
+    YHDynamicButton *button = [YHDynamicButton buttonWithType:UIButtonTypeCustom];
+    [button setBackgroundColor:UIColor.redColor];
+    [button setTitle:@"lalala" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(changeTitle:) forControlEvents:UIControlEventTouchUpInside];
+    button.frame = CGRectMake(20, 100, 50, 44);
+    [self.view addSubview:button];
+}
+- (IBAction)changeTitle2:(UIButton *)sender {
+    [self changeTitle:sender];
+}
+
+- (void)changeTitle:(UIButton *)btn {
+    [btn setTitle:[NSString stringWithFormat:@"%@%@", btn.currentTitle, @"lalala"] forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning

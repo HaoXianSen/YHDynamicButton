@@ -1,0 +1,23 @@
+PODS:
+  - Kiwi (3.0.0)
+  - YHDynamicButton (0.1.0)
+
+DEPENDENCIES:
+  - Kiwi
+  - YHDynamicButton (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Kiwi
+
+EXTERNAL SOURCES:
+  YHDynamicButton:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Kiwi: fbeafef0f00e4d8f7dcb3420a4930afe70af77f7
+  YHDynamicButton: 2b3b9ed138e2b56b3d1ed9cdd40401a599f1b6f6
+
+PODFILE CHECKSUM: 69224adfee802d75a0277a5f83c216958fb7f526
+
+COCOAPODS: 1.9.1
