@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/1335430614@qq.com/YHDynamicButton'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '1335430614@qq.com'}
+  s.author           = '1335430614@qq.com'
   s.source           = { :git => 'https://github.com/1335430614@qq.com/YHDynamicButton.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
