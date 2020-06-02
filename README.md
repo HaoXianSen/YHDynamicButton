@@ -1,5 +1,6 @@
 # YHDynamicButton
-Create a button use YHDynamicButton,  it can change button width or height automatically，it can Layout by frame or autoLayout.
+Create a button use YHDynamicButton,  it can change button width automatically according it's title，it can Layout by frame or autoLayout.
+
 [![CI Status](https://img.shields.io/travis/1335430614@qq.com/YHDynamicButton.svg?style=flat)](https://travis-ci.org/1335430614@qq.com/YHDynamicButton)
 [![Version](https://img.shields.io/cocoapods/v/YHDynamicButton.svg?style=flat)](https://cocoapods.org/pods/YHDynamicButton)
 [![License](https://img.shields.io/cocoapods/l/YHDynamicButton.svg?style=flat)](https://cocoapods.org/pods/YHDynamicButton)
@@ -10,6 +11,8 @@ Create a button use YHDynamicButton,  it can change button width or height autom
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+Plateform iOS， iOS 8.0 latter
 
 ## Installation
 

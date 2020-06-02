@@ -21,10 +21,13 @@
 	
     
     YHDynamicButton *button = [YHDynamicButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(20, 100, 50, 44);
+    button.maximumWidth = 100;
+    button.minimumWidth = 44;
+    button.contentEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 10);
     [button setBackgroundColor:UIColor.redColor];
     [button setTitle:@"lalala" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(changeTitle:) forControlEvents:UIControlEventTouchUpInside];
-    button.frame = CGRectMake(20, 100, 50, 44);
     [self.view addSubview:button];
 }
 - (IBAction)changeTitle2:(UIButton *)sender {

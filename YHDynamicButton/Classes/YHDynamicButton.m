@@ -8,6 +8,12 @@
 #import "YHDynamicButton.h"
 #import "NSString+YHSize.h"
 
+// 不定文本button解决方式
+// 1. 非固定width， 可以采用trailing >= 固定值，调节contentInsets
+// 2. 固定width
+//  1> 分为纯frame 固定width， 计算width 改变width
+//  2> autolayout 固定NSLayoutAttributeWidth， 计算width 改变width
+
 @interface YHDynamicButton()
 
 @property (nonatomic, strong) NSMutableDictionary *cacheDict;
@@ -15,6 +21,26 @@
 @end
 
 @implementation YHDynamicButton
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        _maximumWidth = CGFLOAT_MAX;
+        _minimumWidth = 0;
+    }
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        _maximumWidth = CGFLOAT_MAX;
+        _minimumWidth = 0;
+    }
+    return self;
+}
 
 - (NSMutableDictionary *)cacheDict {
     if (!_cacheDict) {
@@ -35,10 +61,15 @@
     CGFloat superViewWidth = self.superview.frame.size.width;
     NSString *text = self.currentTitle;
     CGFloat width = 0;
+    
     if (![self.cacheDict objectForKey:text]) {
         width = [text widthWithFont:self.titleLabel.font maxHeight:self.frame.size.height];
         width += imageWidth + horizontal;
-        width = MIN(width, superViewWidth - self.frame.origin.x - [self right]);
+        if (superViewWidth == 0) {
+            return;
+        }
+        CGFloat limitedWidth = MIN(self.maximumWidth, superViewWidth - self.frame.origin.x - [self right]);
+        width = MAX(self.minimumWidth, MIN(width, limitedWidth));
         [self.cacheDict setValue:@(width) forKey:text];
     } else {
         width = [[self.cacheDict objectForKey:text] floatValue];
@@ -51,10 +82,18 @@
         }
     } else {
         CGRect frame = self.frame;
-        if (frame.size.width < width) {
+        if (frame.size.width != width) {
             frame.size.width = width;
             self.frame = frame;
         }
+    }
+}
+
+- (void)didMoveToSuperview {
+    [super didMoveToSuperview];
+    
+    if (!self.constraints || !self.constraints.count) {
+        [self changeSelf];
     }
 }
 

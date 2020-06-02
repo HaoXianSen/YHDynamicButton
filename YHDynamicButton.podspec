@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'YHDynamicButton'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of YHDynamicButton.'
+  s.summary          = 'A dynamic width button'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,13 +18,13 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+                        Change a button title, button's width changed automatically.
                        DESC
 
   s.homepage         = 'https://github.com/1335430614@qq.com/YHDynamicButton'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '1335430614@qq.com' => 'haoyuhong@dangdang.com' }
+  s.author           = { '1335430614@qq.com'}
   s.source           = { :git => 'https://github.com/1335430614@qq.com/YHDynamicButton.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
