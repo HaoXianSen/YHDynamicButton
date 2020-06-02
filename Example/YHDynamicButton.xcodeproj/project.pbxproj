@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1AA2DC3D5EC3CE0F579AFF13 /* Pods_YHDynamicButton_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401D0EAD7646194C8A478388 /* Pods_YHDynamicButton_Tests.framework */; };
-		4AB7556F2485F767002E6759 /* YHDynamicButton.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 4AB7556E2485F767002E6759 /* YHDynamicButton.podspec */; };
-		4AB755712485F793002E6759 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4AB755702485F793002E6759 /* README.md */; };
-		4AB755732485F7BA002E6759 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4AB755722485F7BA002E6759 /* LICENSE */; };
+		4AB755772485F86C002E6759 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4AB755742485F86C002E6759 /* README.md */; };
+		4AB755782485F86C002E6759 /* YHDynamicButton.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 4AB755752485F86C002E6759 /* YHDynamicButton.podspec */; };
+		4AB755792485F86C002E6759 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4AB755762485F86C002E6759 /* LICENSE */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -41,9 +41,9 @@
 
 /* Begin PBXFileReference section */
 		401D0EAD7646194C8A478388 /* Pods_YHDynamicButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHDynamicButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AB7556E2485F767002E6759 /* YHDynamicButton.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YHDynamicButton.podspec; sourceTree = "<group>"; };
-		4AB755702485F793002E6759 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		4AB755722485F7BA002E6759 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		4AB755742485F86C002E6759 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4AB755752485F86C002E6759 /* YHDynamicButton.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = YHDynamicButton.podspec; path = ../YHDynamicButton.podspec; sourceTree = "<group>"; };
+		4AB755762485F86C002E6759 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4D36EFF75FF6666F3159984C /* Pods-YHDynamicButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHDynamicButton_Example.debug.xcconfig"; path = "Target Support Files/Pods-YHDynamicButton_Example/Pods-YHDynamicButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		593E573C815ECC7910FDBC42 /* Pods_YHDynamicButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHDynamicButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* YHDynamicButton_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YHDynamicButton_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,9 +192,9 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				4AB7556E2485F767002E6759 /* YHDynamicButton.podspec */,
-				4AB755702485F793002E6759 /* README.md */,
-				4AB755722485F7BA002E6759 /* LICENSE */,
+				4AB755762485F86C002E6759 /* LICENSE */,
+				4AB755742485F86C002E6759 /* README.md */,
+				4AB755752485F86C002E6759 /* YHDynamicButton.podspec */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -281,11 +281,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AB755712485F793002E6759 /* README.md in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
-				4AB755732485F7BA002E6759 /* LICENSE in Resources */,
-				4AB7556F2485F767002E6759 /* YHDynamicButton.podspec in Resources */,
+				4AB755772485F86C002E6759 /* README.md in Resources */,
+				4AB755792485F86C002E6759 /* LICENSE in Resources */,
+				4AB755782485F86C002E6759 /* YHDynamicButton.podspec in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
